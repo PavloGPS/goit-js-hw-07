@@ -40,7 +40,7 @@ function onGalleryElClick(evt) {
       },
       onClose: (instance) => {
         galleryEl.removeEventListener("keydown", onEscKeydown);
-        console.log("cosed and remooved event listener from Esc");
+        // console.log("closed and removed event listener from Esc");
       },
     }
   );
