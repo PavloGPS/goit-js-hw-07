@@ -39,8 +39,9 @@ function onGalleryElClick(evt) {
 
   function onEscKeydown(evt) {
     if (evt.code === "Escape") {
-      instance.close();
-      galleryEl.removeEventListener("keydown", onEscKeydown);
+      instance.close(() => {
+        galleryEl.removeEventListener("keydown", onEscKeydown);
+      });
     }
   }
 }
